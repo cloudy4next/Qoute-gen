@@ -4,15 +4,21 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use DB;
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
 
 class Qoutes extends Model
 {
-    //
+    use CrudTrait;
 
     protected $fillable = [
         'name',
         'quotes',
     ];
+
+    protected $table = 'qoutes';
+    
+    protected $guarded = ['id'];
+
 
     public static function getQoutes($search_keyword) {
         $users = DB::table('qoutes');

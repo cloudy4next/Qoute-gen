@@ -22,7 +22,7 @@ Route::post('login', 'Api\Auth\AuthController@login');
 Route::post('logout', 'Api\Auth\AuthController@logout');
 
 Route::group(['middleware' => ['auth:api']], function(){
-    Route::get('qoute-list', 'Api\QouteBasicDataController@qouteList');
+    Route::post('qoute-list', 'Api\QouteBasicDataController@qouteList');
     Route::post('qoute-save', 'Api\QouteBasicDataController@store');
 
 });

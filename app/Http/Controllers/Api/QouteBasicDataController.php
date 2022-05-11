@@ -14,11 +14,12 @@ class QouteBasicDataController extends Controller
     {
         $data = Qoutes::all();
         $arQouteData = array();
-
-        foreach ($data as $qoute) {
-            $arQouteData[] = $qoute->getQouteBasicInfo();
-        }
-        return response()->json(['success' => $arQouteData], 200);
+        array_push($arQouteData,$data);
+        // foreach ($data as $qoute) {
+        //     $arQouteData[] = $qoute->getQouteBasicInfo();
+        // }
+          
+        return response()->json(['success' => $data], 200);
     }
 
     public function store(Request $request)

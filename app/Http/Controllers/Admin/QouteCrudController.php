@@ -26,7 +26,7 @@ class QouteCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\App\Models\Qoute::class);
+        CRUD::setModel(\App\Models\Qoutes::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/qoute');
         CRUD::setEntityNameStrings('qoute', 'qoutes');
     }
@@ -39,11 +39,11 @@ class QouteCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::column('id');
+        // CRUD::column('id');
         CRUD::column('name');
         CRUD::column('quotes');
         CRUD::column('created_at');
-        CRUD::column('updated_at');
+
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -62,11 +62,10 @@ class QouteCrudController extends CrudController
     {
         CRUD::setValidation(QouteRequest::class);
 
-        CRUD::field('id');
+        // CRUD::field('id');
         CRUD::field('name');
         CRUD::field('quotes');
-        CRUD::field('created_at');
-        CRUD::field('updated_at');
+
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
