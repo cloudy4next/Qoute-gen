@@ -1,5 +1,17 @@
 # Qoute Gen
 
+### Features
+- shows random Quotes of Famous Persons.
+- Can  Refresh Button to show 5 random Quotes each time (on the same page without reloading).
+- There is Text Input field to Search the Quotes with Keywords (on the same page without reloading).
+- These Quotes can be added/edited/deleted from Admin Panel.
+- Authentication for this page should be done with a user name & password.
+- Two API endpoints created.
+- The API route is secured with a token (optional).
+- Above features are tested with Feature tests (optional).
+- Above features are tested with Unit tests (optional).
+
+#### Bounded with short amount of time i couldn't  create reponsive / eye catching UI :smile:
 ## Installation
 
 1. Checkout the repository:
