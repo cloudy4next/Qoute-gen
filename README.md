@@ -26,19 +26,19 @@ cp .env.example .env
 php artisan key:generate
 
 ```
-3. Run migration: 
-```
-php artisan migrate
-```
-4. Run seeder
-``` 
-php artisan db:seed 
-```
-5. Install composer dependencies: 
-
+3. Install composer dependencies: 
 ```
 composer install
 ```
+4. Run migration: 
+```
+php artisan migrate
+```
+5. Run seeder
+``` 
+php artisan db:seed 
+```
+
 
 6. Install Passport for Tesing api: 
 
