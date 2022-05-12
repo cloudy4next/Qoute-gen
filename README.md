@@ -44,5 +44,13 @@ php artisan serve
 
 ## POSTMAN Api Testing 
 
+1. Set Username and password 
+![My Image](screenshort/login.png)
 
+Copy token and add it to ``Bearer Token``.
 
+2. Make request as showed to see following result:
+![My Image](screenshort/qoute-list.png)
+
+3. Make request as showed to see following result:
+![My Image](screenshort/save-qoutes.png)
