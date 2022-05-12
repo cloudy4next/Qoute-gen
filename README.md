@@ -54,3 +54,11 @@ Copy token and add it to ``Bearer Token``.
 
 3. Make request as showed to see following result:
 ![My Image](screenshort/save-qoutes.png)
+
+
+## Unit Testing and Feature Testing
+```
+php artisan test
+
+./vendor/bin/phpunit
+```
