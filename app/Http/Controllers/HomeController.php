@@ -26,6 +26,8 @@ class HomeController extends Controller
         // User::all()->random(10);
         if($request->ajax()) {
             $users = Qoutes::all()->random(5);
+            
+                event(new \App\Events\SendMessage());
                 return view('pages.user_data', compact('users'))->render();
         }
     }

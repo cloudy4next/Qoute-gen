@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <!-- Latest compiled JavaScript -->
     {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script> --}}
 </head>
+
 <body>
     @include('inc.header')
     <div class="main-box">
@@ -22,6 +24,7 @@
     @include('inc.footer')
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-  @stack('scripts')
+    @stack('scripts')
 </body>
+
 </html>
